@@ -178,7 +178,7 @@ define(function (require) {
 
                 // Visual
                 areaData.setItemVisual(idx, {
-                    color: seriesData.getVisual('color')
+                    color: areaData._rawData[idx].color || seriesData.getVisual('color')
                 });
             });
 
